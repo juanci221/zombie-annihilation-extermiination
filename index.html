@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Zombie Annihilation Extermiination</title>
+    
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+
+    <style>
+    #container { 
+    width: 100%; /* Ancho del contenedor será el 100% del contenedor padre */
+    height: auto; /* Altura se ajusta rá automáticamente al contenido */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y alto total */
+ 
+}
+
+
+ 
+/* Media query para dispositivos con un ancho máximo de 768px (típicamente dispositivos móviles) */
+@media screen and (max-width: 768px) {
+    #container {
+        padding: 0 20px; /* Agrega un relleno a los lados para dispositivos móviles */
+    }
+
+
+}
+
+/* Media query para dispositivos con un ancho máximo de 480px (típicamente dispositivos móviles pequeños) */
+@media screen and (max-width: 480px) {
+    #container {
+        padding: 0 10px; /* Reducir más el relleno para dispositivos móviles pequeños */
+    }
+  
+  
+}   
+
+/* Media query para tablets en posición horizontal (769px a 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* No es necesario agregar estilos adicionales para tablets en esta versión */
+  
+}
+    </style>
+ 
+    
+
+</head>
+
+<body >
+
+    <div id="container"></div>
+ 
+ <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+
+ <script src="js/plugins/rexvirtualjoystickplugin.min.js"></script>
+
+ <script src="demo.js" type="module"></script>
+</body>
+</html>
